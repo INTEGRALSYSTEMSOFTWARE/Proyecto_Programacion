@@ -13,20 +13,34 @@ public class Proyecto{
     public double Tapial(double a, double b){ 
             return a * b;                    
             }
+    public double MaterialPlafon(double a, double b){ 
+            double tabla=3, pi1=12, liston=3, canaleta=3, anguloama=3, alambre12=3, alambre16=3, anclas=4, cinta=3, rdmix=3;
+            double ope=0, ope1;
+
+            ope = Plafon * tabla;
+            ope1 = Plafon * pi1;
+
+
+
+
+
+            return ope;                    
+            }
 
 
 		public static void main(String a[]){ 
 
-			int opcion = 0;                           
+			int opcion = 0;
+            int opcion2= NULL;                           
         	Proyecto objeto = new Proyecto(); 
             
             	do{
                 	try{ 
                     	while(true){  
-                                  
+                            System.out.println("SISTEMAS INTEGRALES EN CONSTRUCCION Y ACABADOS DE INTERIORES");        
                         	System.out.println("Menu:"); 
-                        	System.out.println("\t1\tMuros"); 
-                        	System.out.println("\t2\tPlafon"); 
+                        	System.out.println("\t1\t Sistemas de Muros"); 
+                        	System.out.println("\t2\t Sistemas de Plafon"); 
                         	System.out.println("\t3\tLambrin"); 
                         	System.out.println("\t4\tTapial"); 
                         	System.out.println("\t5\tSalida"); 
@@ -45,6 +59,21 @@ public class Proyecto{
 
                                     case 1: 
                                         System.out.println("\n\t\tEl area es: " + objeto.Muro(n1, n2) + "m2" + "\n"); 
+
+                                         System.out.println("Deseas saber cuanto material necesitas, digita 1 ");
+                                         System.in = opcion2;
+                                         System.out.println("Digita 0 para regresar al menu");
+
+                                         if (opcion2 = 1){
+                                            opcion2 = materiales;
+
+                                         }
+
+
+
+
+
+
                                     break; 
 
                                         case 2: 
